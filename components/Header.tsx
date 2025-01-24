@@ -15,7 +15,7 @@ const Header = () => {
     {
       name: "Dashboard",
       icon: <MdOutlineDashboard className="text-gray-600 dark:text-gray-400" />,
-      link: "/",
+      link: "/dashboard",
     },
     {
       name: "Notes Generator",
@@ -36,13 +36,13 @@ const Header = () => {
   const [OpenMenu , setOpenMenu] = useState<boolean>(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-50 dark:bg-gray-900 shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-50 dark:bg-gray-900 shadow-md rounded-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-5">
         <div className="md:hidden" >
-          <Button variant="ghost" className="h-fit w-fit" onClick={() => OpenMenu === true ? setOpenMenu(false):setOpenMenu(true)}>
-            {OpenMenu &&<MdOutlineMenu size={30}/>}
-            {!OpenMenu && <RxCross2 size={30}/>}
+          <Button variant="ghost" className="h-18 w-18" onClick={() => OpenMenu === true ? setOpenMenu(false):setOpenMenu(true)}>
+            {!OpenMenu &&<MdOutlineMenu size={50}/>}
+            {OpenMenu && <RxCross2 size={50}/>}
           </Button>
         </div>
           <div className="flex-shrink-0">
@@ -72,7 +72,7 @@ const Header = () => {
                 },
               }}
             />
-            
+
           </div>
         </div>
       </div>
