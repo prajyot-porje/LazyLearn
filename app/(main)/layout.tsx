@@ -14,7 +14,10 @@ export default function RootLayout({
         <div className="fixed">
           <Header />
         </div>
+        <div className="bg-white dark:bg-[#292929] ">
+
         {children}
+        </div>
       </div>
     </main>
   );

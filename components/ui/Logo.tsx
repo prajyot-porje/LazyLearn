@@ -10,12 +10,12 @@ const fontlogo = Galada({
 const Logo = () => {
   return (
     <Link href="/" className={`${fontlogo.className} flex text-center text-4xl`}>
-      <div className="text-purple-600">L</div>
+      <div className="text-blue-500">L</div>
       <div>a</div>
       <div>z</div>
       <div>y</div>
       <div>&nbsp;</div>
-      <div className="text-purple-600">L</div>
+      <div className="text-blue-500">L</div>
       <div>e</div>
       <div>a</div>
       <div>r</div>

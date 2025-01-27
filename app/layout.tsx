@@ -3,6 +3,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/theme-provider";
 import Provider from "./provider";
+import { dark } from '@clerk/themes'
 
 export const metadata: Metadata = {
   title: "Lazy Learn",
@@ -18,7 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider 
+   >
       <html lang="en" suppressHydrationWarning>
         <body>
           <Provider>
