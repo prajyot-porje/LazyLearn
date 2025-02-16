@@ -17,7 +17,7 @@ const Header = () => {
     {
       name: "Dashboard",
       icon: <MdOutlineDashboard className="text-gray-600 dark:text-gray-400" />,
-      link: "/dashboard",
+      link: "/",
     },
     {
       name: "Notes Generator",
