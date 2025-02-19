@@ -1,5 +1,5 @@
 import React from "react";
-import { Galada, Jersey_15, Rubik } from "next/font/google";
+import { Galada} from "next/font/google";
 import Link from "next/link";
 
 const fontlogo = Galada({
